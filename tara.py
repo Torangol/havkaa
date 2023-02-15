@@ -39,3 +39,4 @@ def push_data():
         return redirect('/')
     else:
         return html
+app.run()
