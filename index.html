@@ -6,20 +6,35 @@
 	<link rel="action" href="./tara.css">
 	</head>
 <body style="background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1614406647_67-p-temnii-fon-dlya-fotoshopa-stena-75.jpg);">
-      <p class="lol">
+      </img>
+      <div class="bv" style="width: 1800px; height: 50px; border:5px solid; margin:auto"
+      align="top" 
+      >
+            <p class="lol">
          <a  
       style="font-size: 46px;"
       href="https://yandex.ru/maps/14/tver/?ll=35.928452%2C56.847352&mode=whatshere&whatshere%5Bpoint%5D=35.925501%2C56.850246&whatshere%5Bzoom%5D=16&z=15.37"
       target="_blank"
-      align="top"
       >
       Адрес
       </a>
       </p>
-
-
-      </img>
-   <form action = "https://online-bloknot.ru/?ysclid=le5blmjd2u476481610/pushdata" method = "POST">
+      </div>
+      <div class="bv" style="width: 1600px; height: 50px; border:5px solid; margin-left: 220px; margin-top: -60px;"
+      align="top" 
+      >
+            <p class="lol">
+         <a  
+      style="font-size: 46px;"
+      href="https://torangol.github.io/tata/"
+      target="_blank"
+      >
+      Мерч
+      </a>
+      </p>
+      </div>
+      
+   <form action = "http://localhost:5000/pushdata" method = "post">
          <p style="font-size: 64px" class="tars" 
          >
          Напиши что надо:
@@ -31,7 +46,7 @@
          <p>Количество</p>
       </div>
    <div class="c">
-         <p>Вес (если на развес)</p>
+         <p>Адрес</p>
       </div>
          <img class="gaga"
       src="https://listaj.ru/wp-content/uploads/2022/04/sushi-53564252-1536x1024.jpg"
@@ -40,7 +55,6 @@
       align="right"
       >
       </img>
-
    <img class="dada"
       src="https://lookw.ru/1/228/1380318094-sengvichi--15.jpg"
       alt="Ошибка, но мб скоро ее не будет"
@@ -54,7 +68,6 @@
       align="right"
       >
       </img>
-         
    <div>
    <p class="s" style="font-family: Times New Roman;" ><input type = "text" name = "item"/>
          </p>
@@ -62,9 +75,13 @@
          </p>
    <p class="s" ><input type = "text" name = "package">
          </p>
-   <p class="a" ><input type = "submit" value = "кинуть">
-         </p>
    </div>
-      </form>   
+      <form class="ba" action="send.php" method="post">
+      <input type="text" name="fio" placeholder="Укажите ФИО" required>
+      <input type="text" name="email" placeholder="Укажите e-mail" required>
+      <input type="submit" value="Отправить">
+      </form> 
+      </body>
+   </html>
    </body>
 </html>

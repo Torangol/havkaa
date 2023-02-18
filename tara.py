@@ -1,18 +1,13 @@
 class Shop:
     def __init__(self, dbname: str):
-        # я храню базу данных внутри нашего магазина
         self.db = MyDB(dbname)
     
     def push_new_buy(self, item, quantity, package):
-        # я делаю из записей строку
         record = item + ' ' +  str(quantity) + ' ' + package
-        # с помощью ранее написанного класса мы добавляем запись в хранилище
         self.db.add(record)
     
     def __str__(self):
         s = ''
-        # с помощью ранее написанного класса мы читаем всё из хранилища 
-        # и просто возращаем
         for el in self.db.output():             
             s += el + " <br>"
         return s
@@ -39,4 +34,3 @@ def push_data():
         return redirect('/')
     else:
         return html
-app.run()

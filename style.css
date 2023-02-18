@@ -61,9 +61,31 @@
 	font: 21px Tahoma;
 	color: #e7e7e7;
 	text-shadow: #000 2px 0px 2px, #000 0px 2px 2px, #000 0px -2px 2px, #000 -2px 0px 2px;
+	margin-top: -30px;
 }
 .rara {
 	margin-right: 160px;
 	margin-top: 900px
 
+}
+.bv {
+	width: 70%;
+	height: 50px;
+	border:1px solid;
+	margin:auto;
+	background: rgb(45,14,56);
+}
+.qrq {
+ 	transform: translate(-13em, 1em);
+	font: 21px Tahoma;
+	color: #e7e7e7;
+	text-shadow: #000 2px 0px 2px, #000 0px 2px 2px, #000 0px -2px 2px, #000 -2px 0px 2px;
+	margin-top: -30px;
+}
+.ba {
+	display: inline-block;
+  	transform: translate(8em, 2.7em);
+	font: 24px Tahoma;
+	color: #e7e7e7;
+	text-shadow: #000 2px 0px 2px, #000 0px 2px 2px, #000 0px -2px 2px, #000 -2px 0px 2px;
 }
