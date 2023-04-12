@@ -1,0 +1,28 @@
+from flask import Flask, request, jsonify
+
+app = Flask(__name__)
+
+@app.route('/imt/', methods=['POST'])
+def calculate_imt():
+    data = request.json
+    
+    if all(key in data for key in ['height', 'weight']):
+        height = int(data['height'])
+        weight = int(data['weight'])
+        imt = int(weight / ((height/100) ** 2))
+        return jsonify({'status': 'ok', 'imt': imt})
+    
+    elif all(key in data for key in ['height', 'imt']):
+        height = int(data['height'])
+        imt = float(data['imt'])
+        weight = int(imt * ((height/100) ** 2))
+        return jsonify({'status': 'ok', 'weight': weight})
+    
+    elif all(key in data for key in ['weight', 'imt']):
+        weight = int(data['weight'])
+        imt = float(data['imt'])
+        height = int(((weight / imt) ** 0.5) * 100)
+        return jsonify({'status': 'ok', 'height': height})
+    
+    else:
+        return jsonify({'status': 'error', 'message': 'Missing required parameter(s)'})
